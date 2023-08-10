@@ -1,0 +1,13 @@
+<div>
+  <input [(ngModel)]="title" type="text" placeholder="write note title..." />
+  <textarea
+    [(ngModel)]="content"
+    placeholder="write note content..."
+  ></textarea>
+  <button
+    (click)="addNote()"
+    [disabled]="title.length <= 0 || content.length <= 0"
+  >
+    Add note
+  </button>
+</div>

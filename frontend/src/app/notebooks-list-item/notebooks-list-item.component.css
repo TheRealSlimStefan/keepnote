@@ -1,0 +1,51 @@
+li {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+a {
+  color: rgba(150, 150, 150, 0.5);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+li:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  cursor: pointer;
+}
+
+li:hover a {
+  color: white;
+}
+
+.notebook-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.notebook-info input {
+  width: 65%;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.edit-icon,
+.delete-icon {
+  font-size: 20px;
+  color: rgba(150, 150, 150, 0.5);
+  transition: color 0.3s;
+}
+
+.icon-container:hover .edit-icon,
+.icon-container:hover .delete-icon {
+  color: white;
+}

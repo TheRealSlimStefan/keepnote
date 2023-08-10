@@ -1,0 +1,28 @@
+<div class="note">
+  <input
+    [(ngModel)]="title"
+    type="text"
+    [disabled]="!isEditOn"
+    placeholder="write note title..."
+  />
+  <h4>{{ note.date | date : "dd-MM-yyyy" }}</h4>
+  <textarea
+    [(ngModel)]="content"
+    [disabled]="!isEditOn"
+    placeholder="write note content..."
+  ></textarea>
+  <button
+    [disabled]="title.length <= 0 || content.length <= 0"
+    *ngIf="isEditOn"
+    (click)="editNote()"
+  >
+    Save
+  </button>
+  <button
+    [disabled]="title.length <= 0 || content.length <= 0"
+    *ngIf="!isEditOn"
+    (click)="startEditing()"
+  >
+    Edit
+  </button>
+</div>

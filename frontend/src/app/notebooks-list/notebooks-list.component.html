@@ -1,0 +1,9 @@
+<div>
+  <h1>Your notebooks:</h1>
+  <ul>
+    <app-notebooks-list-item
+      *ngFor="let notebook of notebooks"
+      [notebook]="notebook"
+    ></app-notebooks-list-item>
+  </ul>
+</div>

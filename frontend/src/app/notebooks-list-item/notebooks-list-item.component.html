@@ -1,0 +1,28 @@
+<li routerLink="/addNote" (click)="setCurrentNotebook()">
+  <div class="notebook-info">
+    <a *ngIf="!editOn">{{ notebook.name }}</a>
+    <input *ngIf="editOn" [(ngModel)]="name" type="text" name="notebook" />
+
+    <div class="icon-container">
+      <i
+        *ngIf="!editOn"
+        class="edit-icon fas fa-pencil-alt"
+        title="Edit"
+        (click)="edit($event)"
+      ></i>
+      <i
+        *ngIf="editOn"
+        class="fas fa-check"
+        title="Edit"
+        (click)="edit($event)"
+      ></i>
+      <i
+        class="delete-icon fas fa-trash"
+        title="Delete"
+        role="button"
+        aria-label="Delete"
+        (click)="delete($event)"
+      ></i>
+    </div>
+  </div>
+</li>

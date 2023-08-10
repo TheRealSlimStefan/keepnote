@@ -1,0 +1,52 @@
+div {
+  position: relative; /* Dodaj pozycję względną */
+  padding: 10px;
+  text-align: center;
+  color: rgba(150, 150, 150, 0.5);
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+}
+
+div:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  cursor: pointer;
+  color: white;
+}
+
+div > * {
+  padding-bottom: 5px;
+  text-align: left;
+  color: white;
+}
+
+div h1 {
+  font-size: 16px;
+  margin: 0; /* Usuń marginesy */
+}
+
+div h2 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0; /* Usuń marginesy */
+}
+
+div p {
+  font-size: 12px;
+  color: #ccc;
+  margin: 0; /* Usuń marginesy */
+}
+
+.delete-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: rgba(150, 150, 150, 0.5);
+  font-size: 24px; /* Większy rozmiar ikony kosza */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.delete-icon:hover {
+  color: white;
+}

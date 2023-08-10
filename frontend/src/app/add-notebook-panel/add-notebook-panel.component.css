@@ -1,0 +1,42 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+div > div {
+  background-color: rgba(150, 150, 150, 0.5);
+  width: 75%;
+  padding: 20px 15px;
+  border-radius: 25px;
+}
+
+div > div > * {
+  width: 80%;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #b71375;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+}

@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @Entity
-@Table(name="notes")
+@Table(name = "notes")
 public class Note {
     @Id
     @SequenceGenerator(
@@ -28,21 +28,21 @@ public class Note {
             generator = "note_sequence"
     )
 
-    @Column(name="note_id", nullable = false)
+    @Column(name = "note_id", nullable = false)
     private Long id;
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name="notebook_id", nullable = false)
+    @JoinColumn(nullable = false)
     private Notebook notebook;
 
-    @Column(name="note_name", nullable = false)
+    @Column(nullable = false)
     private String name;
 
-    @Column(name="note_content", nullable = false)
+    @Column(nullable = false)
     private String content;
 
-    @Column(name="note_date", nullable = false)
+    @Column(nullable = false)
     private LocalDateTime date;
 
     public Note(Notebook notebook, String name, String content) {

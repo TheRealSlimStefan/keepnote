@@ -1,0 +1,23 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+div > div {
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+p {
+  font-size: 40px;
+}
+
+span {
+  color: #b71375;
+}

@@ -1,0 +1,13 @@
+<div [routerLink]="['/note']" (click)="setCurrentNote()" class="note-container">
+  <h1>{{ note.name }}</h1>
+  <h2>{{ note.date | date : "dd-MM-yyyy" }}</h2>
+  <p>{{ makeShorter(note.content) }}</p>
+  <i
+    class="delete-icon fas fa-trash"
+    title="Delete"
+    role="button"
+    aria-label="Delete"
+    (click)="delete($event)"
+    routerLink="/addNote"
+  ></i>
+</div>

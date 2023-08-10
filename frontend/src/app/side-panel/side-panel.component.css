@@ -1,0 +1,25 @@
+/* .side-panel {
+  width: 200px;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  overflow-y: hidden;
+}
+*/
+.side-panel .logo-container {
+  cursor: pointer;
+}
+
+.side-panel .logo-container p {
+  width: 100%;
+  padding: 50px 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+span {
+  color: #b71375;
+}

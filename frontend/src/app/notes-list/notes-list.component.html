@@ -1,0 +1,12 @@
+<div>
+  <h1>Your notes:</h1>
+  <ul *ngIf="notes.length > 0; else noNotes">
+    <app-notes-list-item
+      *ngFor="let note of notes"
+      [note]="note"
+    ></app-notes-list-item>
+  </ul>
+  <ng-template #noNotes>
+    <div>Choose notebook or add new note to display notes!</div>
+  </ng-template>
+</div>

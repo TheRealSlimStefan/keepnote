@@ -1,0 +1,7 @@
+<div>
+  <div>
+    <h1>Add Notebook:</h1>
+    <button [disabled]="title.length <= 0" (click)="addNotebook()">Add</button>
+    <input type="text" [(ngModel)]="title" />
+  </div>
+</div>
